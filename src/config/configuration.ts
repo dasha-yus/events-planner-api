@@ -3,4 +3,5 @@ export default () => ({
   database: {
     uri: process.env.MONGOURI,
   },
+  jwtSecret: process.env.JWT_SECRET,
 });
