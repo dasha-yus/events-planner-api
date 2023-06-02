@@ -3,10 +3,11 @@ export enum Role {
   User = 'user',
 }
 
-type User = {
+export type User = {
   id: string;
+  firstname: string;
+  lastname: string;
   email: string;
-  password: string;
   role: Role;
 };
 

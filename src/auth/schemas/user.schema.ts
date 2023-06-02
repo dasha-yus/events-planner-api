@@ -5,7 +5,10 @@ import { Role } from '../interfaces/auth.interface';
 @Schema()
 export class User extends Document {
   @Prop({ type: String, required: true })
-  name: string;
+  firstname: string;
+
+  @Prop({ type: String, required: true })
+  lastname: string;
 
   @Prop({ unique: [true, 'Duplicate email entered'] })
   email: string;
